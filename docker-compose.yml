@@ -5,6 +5,7 @@ services:
     ports:
       - "3306:3306"
     volumes:
+      - type: bind
       - vprodbdata:/var/lib/mysql
     environment:
       - MYSQL_ROOT_PASSWORD=vprodbpass
@@ -27,6 +28,7 @@ services:
     ports:
       - "8080:8080"
     volumes:
+      - type: bind
       - vproappdata:/usr/local/tomcat/webapps
   #vproweb
   vproweb:
