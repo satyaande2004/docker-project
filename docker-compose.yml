@@ -34,5 +34,5 @@ services:
     ports:
       - "80:80"
 volumes:
-  vprodbdata: {}
-  vproappdata: {}
+  vprodbdata:
+  vproappdata:
